@@ -3,7 +3,6 @@
 // Date		: 2020/05/07				//
 // OS		: Ubuntu 16.04.5 LTS 64bits		//
 // Author	: Park Tae Sung				//
-// Student ID	: 2015722031				//
 // ---------------------------------------------------- //
 // Title: System Programming Assignment #2 (cli)	//
 // Description: convert user command to FTP commands	//
