@@ -1,12 +1,11 @@
 //////////////////////////////////////////////////////////
-// File Name	: srv.c					//
-// Date		: 2020/06/03				//
-// OS		: Ubuntu 16.04.5 LTS 64bits		//
-// Author	: Park Tae Sung				//
-// Student ID	: 2015722031				//
+// File Name	: srv.c					                //
+// Date		: 2020/06/03				                //
+// OS		: Ubuntu 16.04.5 LTS 64bits		            //
+// Author	: Park Tae Sung				                //
 // ---------------------------------------------------- //
-// Title: System Programming Assignment #3 (server)	//
-// Description: Socket Programming 			//
+// Title: System Programming Assignment #3 (server)	    //
+// Description: Socket Programming 			            //
 //////////////////////////////////////////////////////////
 #include <unistd.h>     // write()
 #include <stdlib.h>     // exit()
@@ -52,11 +51,11 @@ void print_pwd_in_detail_except_hidden_file(char *pathname, char *result_buff); 
 void print_pwd_in_detail(char *pathname, char *result_buff);                    // ls -al
 
 //////////////////////////////////////////////////////////////////
-// Main								//
+// Main								                            //
 // =============================================================//
-// Input: argv							//
-// Output: 0 success						//
-// Purpose: Main						//
+// Input: argv							                        //
+// Output: 0 success						                    //
+// Purpose: Main						                        //
 //////////////////////////////////////////////////////////////////
 int main(int argc, char **argv)
 {
@@ -174,11 +173,11 @@ int main(int argc, char **argv)
 } // end of main
 
 //////////////////////////////////////////////////////////////////
-// sh_int							//
+// sh_int							                            //
 // =============================================================//
-// Input: signum						//
-// Output: none							//
-// Purpose: signal handler for SIGINT 				//
+// Input: signum						                        //
+// Output: none							                        //
+// Purpose: signal handler for SIGINT 				            //
 //////////////////////////////////////////////////////////////////
 void sh_int(int signum)
 {
@@ -187,11 +186,11 @@ void sh_int(int signum)
 } // end of sh_int
 
 //////////////////////////////////////////////////////////////////
-// sh_chld							//
+// sh_chld							                            //
 // =============================================================//
-// Input: signum						//
-// Output: none							//
-// Purpose: signal handler for SIGCHLD 				//
+// Input: signum						                        //
+// Output: none							                        //
+// Purpose: signal handler for SIGCHLD 				            //
 //////////////////////////////////////////////////////////////////
 void sh_chld(int signum)
 {
@@ -241,11 +240,11 @@ void sh_chld(int signum)
 } // end of sh_chld
 
 //////////////////////////////////////////////////////////////////
-// sh_alrm							//
+// sh_alrm							                            //
 // =============================================================//
-// Input: signum						//
-// Output: none							//
-// Purpose: signal handler for SIGALRM				//
+// Input: signum						                        //
+// Output: none							                        //
+// Purpose: signal handler for SIGALRM				            //
 //////////////////////////////////////////////////////////////////
 void sh_alrm(int signum)
 {
@@ -260,11 +259,11 @@ void sh_alrm(int signum)
 } // end of sh_alrm
 
 //////////////////////////////////////////////////////////////////
-// client_info							//
+// client_info							                        //
 // =============================================================//
-// Input: client_addr						//
-// Output: 0 success						//
-// Purpose: display client ip and port				//
+// Input: client_addr						                    //
+// Output: 0 success						                    //
+// Purpose: display client ip and port				            //
 //////////////////////////////////////////////////////////////////
 int client_info(struct sockaddr_in *client_addr)
 {
@@ -280,12 +279,12 @@ int client_info(struct sockaddr_in *client_addr)
 } // end of client_info()
 
 //////////////////////////////////////////////////////////////////
-// cmd_process								//
+// cmd_process								                    //
 // =============================================================//
-// Input: buff, result_buff							//
-// Output: 0 success                //
-//        -1 fail						//
-// Purpose: command execute						//
+// Input: buff, result_buff							            //
+// Output: 0 success                                            //
+//        -1 fail						                        //
+// Purpose: command execute						                //
 //////////////////////////////////////////////////////////////////
 int cmd_process(char *buff, char *result_buff)
 {
@@ -723,9 +722,9 @@ int cmd_process(char *buff, char *result_buff)
 //////////////////////////////////////////////////////////
 // print_pwd_except_hidden_file(ls)						//
 // =====================================================//
-// Input: pathname (directory name)			//
-// Purpose: read the all files and directories in	//
-// 	    working directory	(excluding hidden file)			//
+// Input: pathname (directory name)			            //
+// Purpose: read the all files and directories in	    //
+// 	    working directory	(excluding hidden file)		//
 //////////////////////////////////////////////////////////
 void print_pwd_except_hidden_file(char *pathname, char *result_buff)
 {
@@ -1177,13 +1176,13 @@ void print_pwd_in_detail(char *pathname, char *result_buff)
 } // end of print_pwd_in_detail()
 
 //////////////////////////////////////////////////////////
-// print_pwd_in_detail_except_hidden_file()(ls -l)	//
+// print_pwd_in_detail_except_hidden_file()(ls -l)	    //
 // =====================================================//
-// Input: pathname (directory name),            //
-//        result_buff (processed result)			//
-// Purpose: read the all files and directories in	//
-// 	    working directory in detail			//
-//		(excluding hidden file)			//
+// Input: pathname (directory name),                    //
+//        result_buff (processed result)			    //
+// Purpose: read the all files and directories in	    //
+// 	    working directory in detail			            //
+//		(excluding hidden file)			                //
 //////////////////////////////////////////////////////////
 void print_pwd_in_detail_except_hidden_file(char *pathname, char *result_buff)
 {
