@@ -1,12 +1,11 @@
 //////////////////////////////////////////////////////////
-// File Name	: cli.c					                //
-// Date		: 2020/06/02				                //
-// OS		: Ubuntu 16.04.5 LTS 64bits		            //
-// Author	: Park Tae Sung				                //
-// Student ID	: 2015722031				            //
+// File Name	: cli.c					//
+// Date		: 2020/06/02				//
+// OS		: Ubuntu 16.04.5 LTS 64bits		//
+// Author	: Park Tae Sung				//
 // ---------------------------------------------------- //
-// Title: System Programming Assignment #3 (client)	    //
-// Description: Socket Programming 			            //
+// Title: System Programming Assignment #3 (client)	//
+// Description: Socket Programming 			//
 //////////////////////////////////////////////////////////
 #include <unistd.h>     // write()
 #include <stdlib.h>     // exit()
@@ -111,12 +110,13 @@ void main(int argc, char **argv)
 }
 
 //////////////////////////////////////////////////////////////////
-// conv_cmd								//
+// conv_cmd							//
 // =============================================================//
-// Input: buff, cmd_buff							//
-// Output: 0 success        				//
-//        -1 fail                           //
-// Purpose: Convert the entered command to FTP command and save it in cmd_buff						//
+// Input: buff, cmd_buff					//
+// Output: 0 success        					//
+//        -1 fail                           			//
+// Purpose: Convert the entered command to FTP command and save //
+// it in cmd_buff						//
 //////////////////////////////////////////////////////////////////
 int conv_cmd(char *buff, char *cmd_buff)
 {
@@ -498,11 +498,11 @@ int conv_cmd(char *buff, char *cmd_buff)
 } // end of conv_cmd()
 
 //////////////////////////////////////////////////////////////////
-// process_result								//
+// process_result						//
 // =============================================================//
-// Input: rcv_buff							//
-// Output: none        				//
-// Purpose: display ls (including options) command result						//
+// Input: rcv_buff						//
+// Output: none        						//
+// Purpose: display ls (including options) command result	//
 //////////////////////////////////////////////////////////////////
 void process_result(char *rcv_buff)
 {
